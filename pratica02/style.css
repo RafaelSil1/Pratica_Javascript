@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    text-align: center;
+    padding-top: 200px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+button {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background: #e50914;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.container {
+    padding-bottom: 50px;
+}
+
+.card-filme {
+    background-color: rgba(128, 128, 128, 0.238);
+    color: black;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.253);
+    padding: 10px 10px 25px 10px ;
+    margin-bottom: 20px;
+    transition: 1s;
+}
+
+.card-filme:hover {
+    transform: scale(1.1);
+    box-shadow: 10px 10px 80px 6px rgba(255, 0, 0, 0.556);
+    border-radius: 10px;
+}
