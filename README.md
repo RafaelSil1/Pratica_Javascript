@@ -1,2 +1,2 @@
-# pratica_de_javascript
+# Pratica_Javascript
 
