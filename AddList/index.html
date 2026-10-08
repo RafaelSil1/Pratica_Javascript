@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Minha Lista</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <section class="lista">
+
+            <header class="cabecalho">
+                <span class="tag">ORGANIZAÇÃO</span>
+
+                <h1>Minha lista</h1>
+
+                <p>
+                    Organize suas tarefas e mantenha tudo em ordem.
+                </p>
+            </header>
+
+            <div class="adicionar">
+
+                <input type="text" id="tarefa" placeholder="Digite uma nova tarefa...">
+
+                <button id="btnAdicionar">
+                    +
+                    <span>Adicionar</span>
+                </button>
+
+            </div>
+
+            <div class="tarefas">
+
+                <div class="tarefa">
+                    <div class="tarefa-conteudo">
+                        <div class="check"></div>
+
+                        <span>Estudar JavaScript</span>
+                    </div>
+
+                    <button class="btn-remover">
+                        x
+                    </button>
+                </div>
+
+                <div class="tarefa">
+                    <div class="tarefa-conteudo">
+                        <div class="check"></div>
+
+                        <span>Fazer exercícios</span>
+                    </div>
+
+                    <button class="btn-remover">
+                        x
+                    </button>
+                </div>
+
+                <div class="tarefa">
+                    <div class="tarefa-conteudo">
+                        <div class="check"></div>
+
+                        <span>Praticar programação</span>
+                    </div>
+
+                    <button class="btn-remover">
+                        x
+                    </button>
+                </div>
+
+            </div>
+
+            <footer class="rodape">
+                <span>3 tarefas</span>
+
+                <button id="limpar">
+                    Limpar lista
+                </button>
+            </footer>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px;
+
+    font-family: Arial, sans-serif;
+
+    background:
+        radial-gradient(circle at 20% 20%,
+            #312e81,
+            transparent 30%),
+        radial-gradient(circle at 80% 80%,
+            #164e63,
+            transparent 30%),
+        #09090f;
+
+    color: white;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+}
+
+.lista {
+    padding: 40px;
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    border-radius: 25px;
+
+    background: rgba(255, 255, 255, 0.06);
+
+    backdrop-filter: blur(20px);
+
+    box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.45);
+}
+
+/* CABEÇALHO */
+
+.cabecalho {
+    margin-bottom: 30px;
+}
+
+.tag {
+    display: inline-block;
+
+    margin-bottom: 15px;
+    padding: 6px 12px;
+
+    border: 1px solid rgba(129, 140, 248, 0.3);
+
+    border-radius: 50px;
+
+    color: #a5b4fc;
+
+    font-size: 11px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.cabecalho h1 {
+    margin-bottom: 8px;
+
+    font-size: 38px;
+
+    letter-spacing: -1px;
+}
+
+.cabecalho p {
+    color: #9999a8;
+
+    font-size: 14px;
+}
+
+/* ÁREA DE ADICIONAR */
+
+.adicionar {
+    display: flex;
+
+    gap: 10px;
+
+    margin-bottom: 25px;
+}
+
+.adicionar input {
+    flex: 1;
+
+    min-width: 0;
+
+    padding: 15px 17px;
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    border-radius: 12px;
+
+    outline: none;
+
+    background: rgba(255, 255, 255, 0.06);
+
+    color: white;
+
+    font-size: 14px;
+
+    transition: 0.2s;
+}
+
+.adicionar input::placeholder {
+    color: #666675;
+}
+
+.adicionar input:focus {
+    border-color: #6366f1;
+
+    box-shadow:
+        0 0 0 3px rgba(99, 102, 241, 0.12);
+}
+
+.adicionar button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    padding: 0 18px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #6366f1;
+
+    color: white;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.adicionar button:first-letter {
+    font-size: 22px;
+}
+
+.adicionar button:hover {
+    background: #818cf8;
+
+    transform: translateY(-1px);
+}
+
+/* TAREFAS */
+
+.tarefas {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.tarefa {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 16px;
+
+    border: 1px solid rgba(255, 255, 255, 0.07);
+
+    border-radius: 14px;
+
+    background: rgba(255, 255, 255, 0.04);
+
+    transition: 0.2s;
+}
+
+.tarefa:hover {
+    background: rgba(255, 255, 255, 0.07);
+
+    transform: translateX(3px);
+}
+
+.tarefa-conteudo {
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+}
+
+.tarefa-conteudo span {
+    color: #e4e4e7;
+
+    font-size: 14px;
+}
+
+/* CHECK */
+
+.check {
+    width: 20px;
+    height: 20px;
+
+    border: 2px solid #555568;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.check:hover {
+    border-color: #818cf8;
+
+    background: rgba(129, 140, 248, 0.15);
+}
+
+/* BOTÃO REMOVER */
+
+.btn-remover {
+    width: 32px;
+    height: 32px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: transparent;
+
+    color: #777788;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.btn-remover:hover {
+    background: rgba(239, 68, 68, 0.12);
+
+    color: #f87171;
+}
+
+/* RODAPÉ */
+
+.rodape {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 20px;
+    padding-top: 18px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+
+    color: #777788;
+
+    font-size: 12px;
+}
+
+#limpar {
+    border: none;
+
+    background: transparent;
+
+    color: #818cf8;
+
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+#limpar:hover {
+    color: #a5b4fc;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 550px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .lista {
+        padding: 25px 20px;
+    }
+
+    .cabecalho h1 {
+        font-size: 32px;
+    }
+
+    .adicionar {
+        flex-direction: column;
+    }
+
+    .adicionar button {
+        min-height: 48px;
+    }
+}
