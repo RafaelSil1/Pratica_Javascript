@@ -5,13 +5,12 @@
 }
 
 body {
-    min-height: 100vh;
+    min-height: 50vh;
 
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
-
-    padding: 30px;
 
     font-family: Arial, sans-serif;
 
@@ -27,9 +26,56 @@ body {
     color: white;
 }
 
+/*========================= */
+
+header {
+
+    width: 100%;
+    height: 70px;
+
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
+    padding: 0 40px;
+
+    margin: 0px;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+
+    backdrop-filter: blur(15px);
+
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+
+    gap: 30px;
+
+    list-style: none;
+}
+
+nav a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #818cf8;
+}
+
 .container {
     width: 100%;
     max-width: 650px;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 
 .lista {
@@ -231,6 +277,18 @@ body {
     background: rgba(129, 140, 248, 0.15);
 }
 
+/* Quando a tarefa estiver concluída, muda a cor do check e risca o texto */
+.tarefa.concluida .check {
+    background-color: #06f30e; /* Muda a cor do check para verde */
+    box-shadow: 0px 00px 20px 2px #06f30e;
+    border-color: #06f30e;
+}
+
+.tarefa.concluida span {
+    text-decoration: line-through; /* Risca o texto */
+    color: #888; /* Deixa o texto mais cinza */
+}
+
 /* BOTÃO REMOVER */
 
 .btn-remover {
@@ -296,7 +354,7 @@ body {
 
 @media (max-width: 550px) {
 
-    body {
+    .container {
         padding: 15px;
     }
 
