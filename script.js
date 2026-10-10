@@ -19,6 +19,6 @@ btnmenos.addEventListener('click', () => {
 display.innerText = 0;
 
 //Previne o zoom padrão em dublo clique em elementos especificos ou na pagina toda//
-document.addEventListener('click', function(event){
+document.addEventListener('dblclick', function(event){
     event.preventDefault();
-} { passive: false });
+}, {passive: false});

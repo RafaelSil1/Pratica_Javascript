@@ -5,12 +5,13 @@
 }
 
 body {
-    min-height: 50vh;
+    min-height: 100vh; /* Alterado de 50vh para 100vh */
 
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start; /* Mudado de center para flex-start para não cortar o topo se a lista crescer */
+    padding: 0px 0px 10px 0px; /* Dá um respiro embaixo da página */
 
     font-family: Arial, sans-serif;
 
@@ -23,6 +24,8 @@ body {
             transparent 30%),
         #09090f;
 
+    background-repeat: no-repeat;
+    background-size: cover; /* Garante que o fundo cubra toda a extensão */
     color: white;
 }
 
@@ -74,8 +77,9 @@ nav a:hover {
 .container {
     width: 100%;
     max-width: 650px;
-    margin-top: 20px;
-    margin-bottom: 40px;
+    /* max-height: 560px; <-- REMOVA OU COMENTE ESSA LINHA PARA A CAIXA CRESCER */
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .lista {
