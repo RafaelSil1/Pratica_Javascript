@@ -10,7 +10,7 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: flex-start; /* Mudado de center para flex-start para não cortar o topo se a lista crescer */
+    justify-content: center; /* Mudado de center para flex-start para não cortar o topo se a lista crescer */
     padding: 0px 0px 10px 0px; /* Dá um respiro embaixo da página */
 
     font-family: Arial, sans-serif;
@@ -31,48 +31,6 @@ body {
 
 /*========================= */
 
-header {
-
-    width: 100%;
-    height: 70px;
-
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-
-    padding: 0 40px;
-
-    margin: 0px;
-
-    background: rgba(255, 255, 255, 0.08);
-
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-
-    backdrop-filter: blur(15px);
-
-    z-index: 1000;
-}
-
-nav ul {
-    display: flex;
-
-    gap: 30px;
-
-    list-style: none;
-}
-
-nav a {
-    color: white;
-
-    text-decoration: none;
-
-    font-size: 16px;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: #818cf8;
-}
 
 .container {
     width: 100%;
